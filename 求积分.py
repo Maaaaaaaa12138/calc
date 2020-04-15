@@ -20,3 +20,5 @@ while fabs(t2n - tn) >= 3 * pow(10, -5):
     k += 1
     tn = t2n
     t2n = T2n(tn, k)
+
+print(f"符合精度要求的解为T2^{k-2}=T{2**(k-2)}={tn:.9f}")
